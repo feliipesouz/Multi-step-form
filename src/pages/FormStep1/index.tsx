@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "./styles";
 
-const index = () => {
-  return <Container>index</Container>;
+const FormStep1 = () => {
+  return <Container>FormStep1</Container>;
 };
 
-export default index;
+export default FormStep1;
