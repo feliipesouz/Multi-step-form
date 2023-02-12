@@ -1,7 +1,12 @@
+import { FormProvider } from "./contexts/FormContext";
 import { Router } from "./router";
 
 const App = () => {
-  return <Router />;
+  return (
+    <FormProvider>
+      <Router />
+    </FormProvider>
+  );
 };
 
 export default App;

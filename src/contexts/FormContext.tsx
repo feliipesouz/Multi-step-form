@@ -29,6 +29,7 @@ const initialData: State = {
   email: "",
   github: "",
 };
+
 const FormContext = createContext<ContextType | undefined>(undefined);
 
 //Reducer
@@ -56,8 +57,9 @@ const formReducer = (state: State, action: Action) => {
   }
 };
 
+
 //Meu Provider, que é um component.
-export const Provider = ({ children }: FromProviderProps) => {
+export const FormProvider = ({ children }: FromProviderProps) => {
   //Em state eu tenho os meus dados, e em dispatch eu tenho uma função que eu uso para executar as minhas ações.
   const [state, dispatch] = useReducer(formReducer, initialData);
   const value = { state, dispatch };
