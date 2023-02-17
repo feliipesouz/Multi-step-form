@@ -40,6 +40,7 @@ export enum FormActions {
   setEmail,
   setGithub,
 }
+
 const formReducer = (state: State, action: Action) => {
   switch (action.type) {
     case FormActions.setCurrentStep:

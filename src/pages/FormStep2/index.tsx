@@ -15,8 +15,8 @@ const FormStep2 = () => {
       navigate("/");
     } else {
       dispatch({
-        type: FormActions.setLevel,
-        payload: 1,
+        type: FormActions.setCurrentStep,
+        payload: 2,
       });
     }
   }, []);

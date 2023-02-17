@@ -10,7 +10,7 @@ const FormStep1 = () => {
 
   React.useEffect(() => {
     dispatch({
-      type: FormActions.setLevel,
+      type: FormActions.setCurrentStep,
       payload: 1,
     });
   }, []);
@@ -33,7 +33,7 @@ const FormStep1 = () => {
   return (
     <Theme>
       <Container>
-        <p>Step 1/3 - {state.level}</p>
+        <p>Step 1/3</p>
         <h1>Let's start with your name.</h1>
         <p>Fill in the field below with your full name.</p>
 
