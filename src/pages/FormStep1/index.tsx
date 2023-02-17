@@ -33,17 +33,22 @@ const FormStep1 = () => {
   return (
     <Theme>
       <Container>
-        <p>Passo 1/3 - {state.level}</p>
-        <h1>Vamos começar com seu nome</h1>
-        <p>Preencha o campo abaixo com seu nome completo</p>
+        <p>Step 1/3 - {state.level}</p>
+        <h1>Let's start with your name.</h1>
+        <p>Fill in the field below with your full name.</p>
 
         <hr />
 
         <label>
-          Seu nome completo
-          <input type={"text"} autoFocus value={state.name} onChange={handleNameChange} />
+          Your full name
+          <input
+            type={"text"}
+            autoFocus
+            value={state.name}
+            onChange={handleNameChange}
+          />
         </label>
-        <button onClick={handleNextStep}>Próximo</button>
+        <button onClick={handleNextStep}>Next</button>
       </Container>
     </Theme>
   );

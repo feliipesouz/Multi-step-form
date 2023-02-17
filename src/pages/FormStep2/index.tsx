@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import SelectOption from "../../components/SelectOptions";
@@ -39,11 +39,11 @@ const FormStep2 = () => {
   return (
     <Theme>
       <Container>
-        <p>Passo 2/3</p>
-        <h1>{state.name}, o que melhor descreve você?</h1>
+        <p>Step 2/3</p>
+        <h1>{state.name}, what best describes you?</h1>
         <p>
-          Escolha a opção que melhor condiz com seu stado atual,
-          profissionalmente.
+          Choose the option that best matches your current status,
+          professionally.
         </p>
 
         <hr />
@@ -63,8 +63,10 @@ const FormStep2 = () => {
           onClick={() => setLevel(1)}
         />
 
-        <Link to={"/"} className={'backButton'}>Voltar</Link>
-        <button onClick={handleNextStep}>Próximo</button>
+        <Link to={"/"} className={"backButton"}>
+          Back
+        </Link>
+        <button onClick={handleNextStep}>Next</button>
       </Container>
     </Theme>
   );
